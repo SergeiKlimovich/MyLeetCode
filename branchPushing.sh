@@ -1,7 +1,8 @@
 #!/bin/bash
 # Получаем имя текущей ветки
 branch_name=$(git branch --show-current)
-
+# добавляем имя текущей ветки в файл README.md
+echo "$branch_name" >> README.md
 # Добавляем все изменения
 git add .
 
