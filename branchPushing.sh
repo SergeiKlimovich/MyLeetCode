@@ -7,11 +7,5 @@ git add .
 # Создаем коммит с названием ветки
 git commit -m "$branch_name"
 
-# Переключаемся на ветку main
-git checkout main
-
-# Мержим рабочую ветку в main
-git merge "$branch_name"
-
-# Обновляем remote ветку main
-git push origin main
+# Пушим в репо
+git push origin "$branch_name"
