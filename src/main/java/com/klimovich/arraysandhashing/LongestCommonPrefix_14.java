@@ -20,7 +20,7 @@ public class LongestCommonPrefix_14 {
             return "";
         }
         String result = strs[0];
-        for (int i = 0; i < strs.length; i++) {
+        for (int i = 1; i < strs.length; i++) {
             while (!strs[i].startsWith(result)) {
                 result = result.substring(0, result.length() - 1);
                 if (result.isEmpty()) {
