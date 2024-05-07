@@ -1,6 +1,7 @@
 package com.klimovich.arraysandhashing;
 
 /*
+https://leetcode.com/problems/design-hashset/description/
 Design a HashSet without using any built-in hash table libraries.
 Implement MyHashSet class:
 void add(key) Inserts the value key into the HashSet.
