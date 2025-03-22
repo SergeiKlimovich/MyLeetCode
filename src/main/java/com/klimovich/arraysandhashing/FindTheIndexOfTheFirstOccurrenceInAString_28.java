@@ -11,20 +11,18 @@ Explanation: "sad" occurs at index 0 and 6.
 The first occurrence is at index 0, so we return 0.
  */
 public class FindTheIndexOfTheFirstOccurrenceInAString_28 {
-  public static void main(String[] args) {
-    String haystack = "sadbutsad";
-    String needle = "sad";
-    System.out.println(strStr(haystack, needle));
-  }
-
-  public static int strStr(String haystack, String needle) {
-    for (int i = 0; i < haystack.length() - needle.length() + 1; i++) {
-      if (haystack.charAt(i) == needle.charAt(0)) {
-        if (haystack.startsWith(needle, i)) {
-          return i;
-        }
-      }
+    public static void main(String[] args) {
+        String haystack = "sadbutsad";
+        String needle = "sad";
+        System.out.println(strStr(haystack, needle));
     }
-    return -1;
-  }
+
+    public static int strStr(String haystack, String needle) {
+        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
+            if (haystack.startsWith(needle, i)) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
